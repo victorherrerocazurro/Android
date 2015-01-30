@@ -31,4 +31,12 @@
         android:layout_toEndOf="@+id/textView"
         android:layout_marginTop="61dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad Implicita"
+        android:id="@+id/btImplicita"
+        android:layout_below="@+id/btConResultado"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

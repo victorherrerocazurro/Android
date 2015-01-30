@@ -43,6 +43,17 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        View btImplicita = findViewById(R.id.btImplicita);
+
+        btImplicita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.example.tarde.holamundo.IMPLICITA");
+
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

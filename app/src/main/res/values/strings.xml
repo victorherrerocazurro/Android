@@ -6,5 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_secondary">Actividad Secundaria</string>
     <string name="title_activity_con_resultado">ConResultadoActivity</string>
+    <string name="title_activity_implicita">ImplicitaActivity</string>
+    <string name="title_activity_implicita_alternativa">ImplicitaAlternativaActivity</string>
 
 </resources>

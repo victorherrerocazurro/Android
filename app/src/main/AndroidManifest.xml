@@ -24,6 +24,22 @@
             android:name=".ConResultadoActivity"
             android:label="@string/title_activity_con_resultado" >
         </activity>
+        <activity
+            android:name=".ImplicitaActivity"
+            android:label="@string/title_activity_implicita" >
+            <intent-filter>
+                <action android:name="com.example.tarde.holamundo.IMPLICITA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImplicitaAlternativaActivity"
+            android:label="@string/title_activity_implicita_alternativa" >
+            <intent-filter>
+                <action android:name="com.example.tarde.holamundo.IMPLICITA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
