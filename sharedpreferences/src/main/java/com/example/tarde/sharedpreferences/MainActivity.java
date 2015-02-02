@@ -24,9 +24,12 @@ public class MainActivity extends ActionBarActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PreferencesActivity.class);
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
 
-                startActivity(intent);
+                String mensaje = preferences.getString(getResources().getString(R.string.key_nombre), "");
+
+                Toast.makeText(MainActivity.this,mensaje,Toast.LENGTH_LONG).show();
+
             }
         });
 
@@ -49,6 +52,8 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(MainActivity.this, PreferencesActivity.class);
+            startActivity(intent);
             return true;
         }
 
