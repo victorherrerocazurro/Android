@@ -1,1 +1,1 @@
-include ':app', ':sharedpreferences', ':fragmentos', ':adapters'
+include ':app', ':sharedpreferences', ':fragmentos', ':adapters', ':fragmentosdinamicos', ':dialogos'
