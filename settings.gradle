@@ -1,1 +1,1 @@
-include ':app', ':sharedpreferences', ':fragmentos', ':adapters', ':fragmentosdinamicos', ':dialogos', ':asynctask'
+include ':app', ':sharedpreferences', ':fragmentos', ':adapters', ':fragmentosdinamicos', ':dialogos', ':asynctask', ':serviciolocal', ':servicioremoto', ':servicioremotocliente'
