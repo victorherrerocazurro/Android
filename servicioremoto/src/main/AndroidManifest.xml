@@ -12,10 +12,26 @@
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
-                <action android:name="com.example.tarde.servicioremoto.SALUDO"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.tarde.servicioremoto.SALUDO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
+        <service
+            android:name=".SaludadorService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.tarde.servicio.saludador.SALUDO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.tarde.servicioremotocliente;
+package com.example.tarde.servicioremoto;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

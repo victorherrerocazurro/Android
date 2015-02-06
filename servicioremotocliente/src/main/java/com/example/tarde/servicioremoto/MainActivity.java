@@ -1,4 +1,4 @@
-package com.example.tarde.servicioremotocliente;
+package com.example.tarde.servicioremoto;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -17,6 +17,7 @@ import android.view.MenuItem;
 public class MainActivity extends ActionBarActivity {
 
     private Messenger messenger;
+    private IServicioSaludador servicioSaludador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,18 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                 }
                 return true;
+            case R.id.action_bind_servicio_saludador:
+                //Intent intent1 = new Intent("com.example.tarde.servicio.saludador.SALUDO");
+                Intent intent1 = new Intent(this,IServicioSaludador.class);
+                bindService(intent1,new SaludadorServiceConnection(), Context.BIND_AUTO_CREATE);
+                return true;
+            case R.id.action_saludar_servicio_saludador:
+                try {
+                    servicioSaludador.basicTypes(12,13l,true,12.4f,12.5,"Texto");
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -61,6 +74,19 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             messenger = new Messenger(service);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    }
+
+    class SaludadorServiceConnection implements ServiceConnection {
+
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            servicioSaludador = IServicioSaludador.Stub.asInterface(service);
         }
 
         @Override

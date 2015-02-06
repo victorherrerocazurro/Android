@@ -1,13 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_bind_service" android:title="Enlazar"
+    <item android:id="@+id/action_add" android:title="Añadir"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/action_hi_service" android:title="Saludar"
+    <item android:id="@+id/action_edit" android:title="Editar"
         android:orderInCategory="200" app:showAsAction="never" />
-
-    <item android:id="@+id/action_bind_servicio_saludador" android:title="Enlazar AIDL"
+    <item android:id="@+id/action_remove" android:title="Borrar"
         android:orderInCategory="300" app:showAsAction="never" />
-    <item android:id="@+id/action_saludar_servicio_saludador" android:title="Saludar AIDL"
-        android:orderInCategory="400" app:showAsAction="never" />
 </menu>
