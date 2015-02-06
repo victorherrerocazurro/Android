@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tarde.serviciolocal" >
+    package="com.example.tarde.intentservice" >
 
     <application
         android:allowBackup="true"
@@ -18,9 +18,8 @@
         </activity>
 
         <service
-            android:name=".MainService"
-            android:enabled="true"
-            android:exported="false">
+            android:name=".SaludadorIntentService"
+            android:exported="false" >
         </service>
     </application>
 
