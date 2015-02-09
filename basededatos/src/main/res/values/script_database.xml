@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="DataBaseVersion">1</integer>
+
+    <string-array name="scriptCreate">
+        <item>CREATE TABLE [Noticias] ([ID] VARCHAR(17)  UNIQUE NOT NULL PRIMARY KEY,[TITULO] VARCHAR(150)  NULL,[LINK] VARCHAR(150)  NULL,[DESCRIPCION] VARCHAR(500)  NULL,[CREADOR] VARCHAR(50)  NULL,[FECHA] TIMESTAMP  NULL,[CONTENIDO] TEXT  NULL)</item>
+    </string-array>
+
+    <string-array name="scriptUpgrade_1_3">
+        <item>DROP TABLE [Noticias]</item>
+        <item>CREATE TABLE [Noticias] ([ID] VARCHAR(17)  UNIQUE NOT NULL PRIMARY KEY,[TITULO] VARCHAR(150)  NULL,[LINK] VARCHAR(150)  NULL,[DESCRIPCION] VARCHAR(500)  NULL,[CREADOR] VARCHAR(50)  NULL,[FECHA] TIMESTAMP  NULL,[CONTENIDO] TEXT  NULL)</item>
+    </string-array>
+
+    <string-array name="scriptUpgrade_2_3">
+        <item>DROP TABLE [Noticias]</item>
+        <item>CREATE TABLE [Noticias] ([ID] VARCHAR(17)  UNIQUE NOT NULL PRIMARY KEY,[TITULO] VARCHAR(150)  NULL,[LINK] VARCHAR(150)  NULL,[DESCRIPCION] VARCHAR(500)  NULL,[CREADOR] VARCHAR(50)  NULL,[FECHA] TIMESTAMP  NULL,[CONTENIDO] TEXT  NULL)</item>
+    </string-array>
+</resources>
