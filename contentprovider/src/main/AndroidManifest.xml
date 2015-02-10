@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tarde.contentprovider" >
+
+    <permission android:name="com.example.tarde.contentprovider.READ_PERMISION"/>
+    <permission android:name="com.example.tarde.contentprovider.WRITE_PERMISION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name=".NoticiasProvider"
+            android:authorities="com.curso.android.noticias"
+            android:readPermission="com.example.tarde.contentprovider.READ_PERMISION"
+            android:writePermission="com.example.tarde.contentprovider.WRITE_PERMISION"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
+    </application>
+
+</manifest>
