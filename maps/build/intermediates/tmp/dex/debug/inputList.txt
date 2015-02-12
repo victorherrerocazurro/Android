@@ -1,0 +1,5 @@
+C:\Users\tarde\AndroidStudioProjects\HolaMundo\maps\build\intermediates\classes\debug
+C:\Users\tarde\AndroidStudioProjects\HolaMundo\maps\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-2dfd19a051dbf599b5cecc4e78bcd179998563c3.jar
+C:\Users\tarde\AndroidStudioProjects\HolaMundo\maps\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-a1833c148ef0a32ee88fe8b02edcd29d46a4a32e.jar
+C:\Users\tarde\AndroidStudioProjects\HolaMundo\maps\build\intermediates\pre-dexed\debug\classes-62447d74d415388cd14b05960faf5efde181842f.jar
+C:\Users\tarde\AndroidStudioProjects\HolaMundo\maps\build\intermediates\pre-dexed\debug\classes-d95ffde5ea0ce4e613d1888d9f5c74227dc47fa1.jar
