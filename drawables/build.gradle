@@ -1,18 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        Release {
-            keyAlias 'DesarrolloAndroidSantiago'
-            keyPassword 'supersecreto'
-            storeFile file('C:/Users/tarde/certificado.jks')
-            storePassword 'secreto'
-        }
-    }
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
+
     defaultConfig {
-        applicationId "com.example.tarde.alarmmanager"
+        applicationId "com.example.tarde.drawables"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
@@ -22,7 +15,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.Release
         }
     }
 }

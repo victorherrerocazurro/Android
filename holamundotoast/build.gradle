@@ -9,10 +9,12 @@ android {
             storePassword 'secreto'
         }
     }
+
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
+
     defaultConfig {
-        applicationId "com.example.tarde.alarmmanager"
+        applicationId "com.tarde.holamundotoast"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
